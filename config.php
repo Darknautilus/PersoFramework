@@ -9,6 +9,8 @@ define("DBNAME", "");
 define("DBUSER", "");
 define("DBPASSWD", "");
 
+define("DBHEADER", 'mysql:host='.DBSERVER.';dbname='.DBNAME);
+
 /*
 	Chemins des repertoires
 */
