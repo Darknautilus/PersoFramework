@@ -4,10 +4,25 @@
 
 {% block content %}
 
-<p>{{ message }}</p>
+<div class="hero-unit">
+  <h1>{{ message }}</h1>
+  <p>Les frameworks PersoFramework et Bootstrap sont bien installés, enjoy!</p>
+  <p>
+    <a class="btn btn-primary btn-large" href="http://twitter.github.com/bootstrap/index.html">
+      En savoir plus
+    </a>
+  </p>
+</div>
 
-<p>Si le message ci-dessus est clair, c'est que PersoFramework est correctement installé.</p>
-<p>Pas envie de se prendre la tête avec le design ? Installez Bootstrap !<br/>
-Il suffit de copier le contenu du répertoire bootstrap-plugin à la racine du site !</p>
+<div class="row">
+	<div class="span2">
+		<p>Avancement du projet :</p>
+	</div>
+	<div class="span10">
+		<div class="progress progress-striped active">
+  			<div class="bar" style="width: 5%;">5%</div>
+		</div>
+	</div>
+</div>
 
 {% endblock %}

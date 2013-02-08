@@ -1,6 +1,8 @@
 <?php
 	include_once(dirname(__FILE__).'/twig/lib/Twig/Autoloader.php');
 	
+	include_once(dirname(__FILE__)."/global_functions.php");
+	
 	// Coupe un texte à $longueur caractères, sur les espaces, et ajoute des points de suspension...
 	function tronque($chaine, $longueur = 120)
 	{
@@ -34,8 +36,9 @@
 		return templates()."/style";
 	}
 	function images() {
-		return css()."/images";
+		return templates()."/images";
 	}
+	
 	function queries($module, $action, $param) {
 		$query = root()."/index.php?module=".$module."&action=".$action;
 		foreach($param as $key => $value) {
