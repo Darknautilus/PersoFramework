@@ -16,7 +16,7 @@ function redirectURL()
 /*
 	Récupération des fichiers de configuration
 */
-include_once("./config.php");
+include_once("./global_config.php");
 include_once("./queries.php");
 
 /*
