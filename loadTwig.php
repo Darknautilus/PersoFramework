@@ -38,6 +38,12 @@
 	function images() {
 		return templates()."/images";
 	}
+	function bootstrap() {
+	  return templates()."/bootstrap";
+	}
+	function fontAwesome() {
+	  return templates()."/fontAwesome";
+	}
 	
 	function queries($module, $action, $param) {
 		$query = root()."/index.php?module=".$module."&action=".$action;
@@ -62,3 +68,5 @@
 	$twig->addFunction("css", new Twig_Function_Function("css"));
 	$twig->addFunction("images", new Twig_Function_Function("images"));
 	$twig->addFunction("queries", new Twig_Function_Function("queries"));
+	$twig->addFunction("bootstrap", new Twig_Function_Function("bootstrap"));
+	$twig->addFunction("fontAwesome", new Twig_Function_Function("fontAwesome"));
